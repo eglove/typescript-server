@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "type": [
+    "types": [
       "node"
     ],
+    "outDir": "./build",
+    "rootDir": "./src",
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
