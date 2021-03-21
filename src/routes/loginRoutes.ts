@@ -15,22 +15,6 @@ function requireAuth(req: Request, res: Response, next: NextFunction): void {
 
 export const router = Router();
 
-router.get('/login', (req: Request, res: Response) => {
-  res.send(`
-    <form method="POST">
-      <div>
-        <label for='email'>Email</label>
-        <input type='email' name='email'/>
-      </div>
-      <div>
-        <label for='password'>Password</label>
-        <input type='password' name='password'>
-      </div>
-      <button>Submit</button>
-    </form>
-  `);
-});
-
 router.post('/login', (req: RequestWithBody, res: Response) => {
   const { email, password } = req.body;
 
